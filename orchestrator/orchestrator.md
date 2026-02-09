@@ -36,4 +36,5 @@
 
 - If the Curator fails to find content for a domain, notify the user.
 - Ensure citations are passed through every stage of the pipeline.
+- **Historical Awareness**: Agents must utilize the [/reports/](file:///c:/Users/749534/Desktop/Daily-Report/reports/) directory to avoid duplicating news or summaries from previous days.
 - Version control the reports by date.

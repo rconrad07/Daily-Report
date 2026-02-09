@@ -7,10 +7,12 @@ This file defines the primary sources, topics, and keywords for the Hospitality 
 - Expedia
 - Booking.com
 - Trivago
-- Hopper
+- Hopper app mobile travel trends
+- ONE Travel
+- engine.com
 
 ## Topics and Keywords
 
-- Conversion
-- New market trends
+- Conversion rates
+- New or developing market trends
 - User experience research on travelers using online travel agencies

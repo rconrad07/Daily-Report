@@ -6,9 +6,10 @@
 - You must use search engines and external sources to find the latest information.
 - You MUST provide citations (URLs) for every piece of information.
 - Focus on the following domains:
-  1. **Stock Market**: Specific ticker symbols (defined in [tickers.md](file:///c:/Users/749534/Desktop/Daily-Report/config/tickers.md)) and general market sentiment. Produce an opinion on market direction relative to the SPY baseline.
+  1. **Stock Market**: Specific ticker symbols (defined in [tickers.md](file:///c:/Users/749534/Desktop/Daily-Report/config/tickers.md)) and general market sentiment. Produce an opinion on market direction relative to the SPY baseline. **CRITICAL**: Specify the exact time period for every price change (e.g., 'today', '24h', 'week-over-week').
   2. **AI Tooling**: Latest trends, new tools, and news relevant to Product Management (defined in [ai_tooling.md](file:///c:/Users/749534/Desktop/Daily-Report/config/ai_tooling.md)). Identify one "AI Word of the Day" (relevant keyword or topic) and its definition.
   3. **Hospitality Tech**: Competitor updates and industry trends (defined in [hospitality_tech.md](file:///c:/Users/749534/Desktop/Daily-Report/config/hospitality_tech.md)).
+- **Deduplication**: Scan previous reports in the [/reports directory](file:///c:/Users/749534/Desktop/Daily-Report/reports/) to ensure you are not gathering news that has already been covered in a previous daily report. Focus only on what is NEW.
 
 ## Responsibilities
 
@@ -24,6 +25,7 @@
 - Watchlist of stock tickers from [tickers.md](file:///c:/Users/749534/Desktop/Daily-Report/config/tickers.md).
 - Priority keywords, sources, and experts for AI Tooling from [ai_tooling.md](file:///c:/Users/749534/Desktop/Daily-Report/config/ai_tooling.md).
 - Priority keywords and sources for Hospitality Tech from [hospitality_tech.md](file:///c:/Users/749534/Desktop/Daily-Report/config/hospitality_tech.md).
+- Previous reports in [reports/ directory](file:///c:/Users/749534/Desktop/Daily-Report/reports/) for history-aware deduplication.
 - Current date.
 
 ## Output Format

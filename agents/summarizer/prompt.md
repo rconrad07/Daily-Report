@@ -14,6 +14,8 @@
 - Create bulleted lists of key takeaways for each domain.
 - Ensure technical concepts are explained simply for a Product Management audience.
 - Preserve and refine the "Market Direction Baseline" and "AI Word of the Day" identified by the Curator.
+- **Precision**: For all data points (especially stock movements), ensure you specify the timeframe (e.g., 'recorded today', 'over the last 24h', 'since the last report'). Avoid ambiguous percentage changes.
+- **Uniqueness Check**: Cross-reference with previous reports in the [/reports directory](file:///c:/Users/749534/Desktop/Daily-Report/reports/) to ensure the summary provides NEW information or a significant update.
 
 ## Inputs
 
