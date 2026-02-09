@@ -4,7 +4,7 @@
 
 ## 🚀 Executive Summary
 
-*A 2-3 sentence overview of the most impactful developments today.*
+*A 2-3 bullet point overview of the most impactful developments today.*
 
 ---
 
@@ -12,6 +12,10 @@
 >
 > [!NOTE]
 > Focus: {{WATCHLIST_SUMMARY}}
+
+### Market Direction Baseline
+
+{{MARKET_DIRECTION_OPINION}}
 
 {{STOCK_MARKET_CONTENT}}
 
@@ -23,6 +27,11 @@
 > Focus: AI for Product Management
 
 {{AI_TOOLING_CONTENT}}
+
+### 💡 AI Word of the Day
+>
+> [!TIP]
+> **{{AI_WORD}}**: {{AI_WORD_DEFINITION}}
 
 ---
 

@@ -13,6 +13,7 @@
 2. **Summarizer**: Distill the raw content into key points.
 3. **Filter**: Remove duplicates and irrelevant noise.
 4. **Formatter**: Apply the template and premium styling.
+5. **Arbiter**: Evaluate the final report for quality and correctness.
 
 ## Domain configuration
 

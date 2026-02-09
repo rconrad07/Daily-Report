@@ -13,6 +13,7 @@
 - Extract the most important details and "bottom line".
 - Create bulleted lists of key takeaways for each domain.
 - Ensure technical concepts are explained simply for a Product Management audience.
+- Preserve and refine the "Market Direction Baseline" and "AI Word of the Day" identified by the Curator.
 
 ## Inputs
 
