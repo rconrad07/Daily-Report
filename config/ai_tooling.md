@@ -7,8 +7,8 @@ This file defines the experts, sources, and topics for the AI Tooling domain in 
 - Marty Cagan
 - Roger Martin
 - Tony Ulwick
-- Lenny Rachitsky
-- Tal Raviv
+- Lenny Rachitsky*
+- Tal Raviv*
 - Aman Khan
 - Richard Rumelt
 - Angie Jones
@@ -20,6 +20,8 @@ This file defines the experts, sources, and topics for the AI Tooling domain in 
 - Kevin Weil
 - Sam Altman
 
+Add additional weighting (appear more frequently in reports (e.g. at least 3-4 times per week if new content exists)) to the experts marked with *
+
 ## Primary Sources of Interest
 
 - Lenny's Podcast
@@ -30,6 +32,8 @@ This file defines the experts, sources, and topics for the AI Tooling domain in 
 - The Product School
 - Claude Blog
 - Cursor Blog
+- Substack
+- ProductCompass
 
 ## Topics and Keywords
 

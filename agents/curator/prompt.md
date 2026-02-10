@@ -9,6 +9,7 @@
   1. **Stock Market**: Specific ticker symbols (defined in [tickers.md](file:///c:/Users/749534/Desktop/Daily-Report/config/tickers.md)) and general market sentiment. Produce an opinion on market direction relative to the SPY baseline. **CRITICAL**: Specify the exact time period for every price change (e.g., 'today', '24h', 'week-over-week').
   2. **AI Tooling**: Latest trends, new tools, and news relevant to Product Management (defined in [ai_tooling.md](file:///c:/Users/749534/Desktop/Daily-Report/config/ai_tooling.md)). Identify one "AI Word of the Day" (relevant keyword or topic) and its definition.
   3. **Hospitality Tech**: Competitor updates and industry trends (defined in [hospitality_tech.md](file:///c:/Users/749534/Desktop/Daily-Report/config/hospitality_tech.md)).
+- **Expert Weighting**: Prioritize and increase the frequency of inclusion for experts defined with an "*" at the end of their name in [ai_tooling.md](file:///c:/Users/749534/Desktop/Daily-Report/config/ai_tooling.md). These experts should be searched for more exhaustively and included whenever they have new insights.
 - **Deduplication**: Scan previous reports in the [/reports directory](file:///c:/Users/749534/Desktop/Daily-Report/reports/) to ensure you are not gathering news that has already been covered in a previous daily report. Focus only on what is NEW.
 
 ## Responsibilities

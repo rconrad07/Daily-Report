@@ -39,7 +39,9 @@ If a gap exists, you flag it—you do not fix it.
 
 ## Output Format
 
-Save reports to `evals/arbiter/Eval_YYYY-MM-DD.md` with:
+Save reports to `evals/arbiter/Eval_YYYY-MM-DD.md`.
+
+- **VERSIONING**: NEVER overwrite an existing evaluation. If an eval already exists for the same date, append `_v2`, `_v3`, etc. (e.g., `Eval_2026-02-10_v2.md`).
 
 - **Overall Score**: (1-100)
 - **Quality Analysis**: Strengths and weaknesses.
