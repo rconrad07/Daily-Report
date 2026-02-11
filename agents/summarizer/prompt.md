@@ -10,6 +10,7 @@
 ## Responsibilities
 
 - Read raw content items provided by the Curator.
+- **Density**: Provide high-density summaries. Instead of just the primary takeaway, include secondary facts, technical caveats, and "product impact" reasoning.
 - Extract the most important details and "bottom line".
 - Create bulleted lists of key takeaways for each domain.
 - Ensure technical concepts are explained simply for a Product Management audience.

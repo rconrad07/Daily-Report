@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Report - {{REPORT_DATE}}</title>
+    <title>Daily Report - Feb 10, 2026 (v4)</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -40,7 +40,6 @@
             overflow-x: hidden;
         }
 
-        /* Sidebar Styling */
         .sidebar {
             width: var(--sidebar-width);
             background: var(--sidebar-bg);
@@ -83,7 +82,11 @@
         }
 
         .sidebar .search-icon {
+            position: absolute;
             left: 0.8rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-dim);
             font-size: 0.9rem;
         }
 
@@ -119,7 +122,6 @@
             border-color: rgba(99, 102, 241, 0.3);
         }
 
-        /* Main Content */
         .main-content {
             margin-left: var(--sidebar-width);
             flex-grow: 1;
@@ -144,38 +146,6 @@
             -webkit-text-fill-color: transparent;
         }
 
-        .search-container {
-            position: relative;
-            width: 400px;
-        }
-
-        #searchBar {
-            width: 100%;
-            padding: 0.9rem 1rem 0.9rem 3rem;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid var(--glass-border);
-            border-radius: 14px;
-            color: white;
-            font-family: inherit;
-            outline: none;
-            transition: all 0.3s;
-        }
-
-        #searchBar:focus {
-            border-color: var(--primary);
-            background: rgba(255, 255, 255, 0.05);
-            box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.15);
-        }
-
-        .search-icon {
-            position: absolute;
-            left: 1.2rem;
-            top: 50%;
-            transform: translateY(-50%);
-            color: var(--text-dim);
-        }
-
-        /* Stacked Section Styling */
         section {
             margin-bottom: 4rem;
             animation: fadeIn 0.6s ease-out;
@@ -202,13 +172,11 @@
             backdrop-filter: blur(10px);
         }
 
-        /* Executive Summary Pulse */
         .summary-card {
             border-left: 4px solid var(--primary);
             background: linear-gradient(to right, rgba(99, 102, 241, 0.05), transparent);
         }
 
-        /* Stock Table Enhanced */
         .stock-table {
             width: 100%;
             border-collapse: collapse;
@@ -249,7 +217,6 @@
             opacity: 0.8;
         }
 
-        /* Content List */
         .content-item {
             margin-bottom: 2rem;
             padding-bottom: 2rem;
@@ -275,7 +242,6 @@
             margin-bottom: 1rem;
         }
 
-        /* Improved Link Tooltip CSS */
         .source-tag {
             display: inline-flex;
             align-items: center;
@@ -297,7 +263,6 @@
             transform: translateY(-2px);
         }
 
-        /* Animations */
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -310,14 +275,13 @@
             }
         }
 
-        /* Word of Day Highlight */
         .word-box {
             background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%);
             border: 1px solid rgba(168, 85, 247, 0.2);
         }
 
         .word-box .term {
-            font-size: 2rem;
+            font-size: 2.2rem;
             font-weight: 700;
             color: #a855f7;
             margin-bottom: 0.5rem;
@@ -350,16 +314,19 @@
         </div>
         <nav>
             <ul class="history-list" id="historyList">
-                <!-- Populated via manifest.json -->
-                <li class="history-item"><a href="#" class="history-link active">Current Report</a></li>
+                <li class="history-item"><a href="#" class="history-link active">Feb 10 - Refined Layout</a></li>
+                <li class="history-item"><a href="Daily_Report_2026-02-10_v3.html" class="history-link">Feb 10 - Trend
+                        Colors</a></li>
+                <li class="history-item"><a href="Daily_Report_2026-02-10_v2.html" class="history-link">Feb 10 - Stacked
+                        Layout</a></li>
             </ul>
         </nav>
     </aside>
 
     <main class="main-content">
         <header>
-            <h1>Daily Report <span
-                    style="font-weight: 300; color: var(--text-dim); margin-left: 10px;">{{REPORT_DATE}}</span></h1>
+            <h1>Daily Report <span style="font-weight: 300; color: var(--text-dim); margin-left: 10px;">Feb 10,
+                    2026</span></h1>
         </header>
 
         <!-- Executive Summary -->
@@ -368,8 +335,13 @@
                 <h2>🚀 Executive Summary</h2>
             </div>
             <div class="card summary-card">
-                <ul id="summaryList" style="list-style: none;">
-                    {{EXECUTIVE_SUMMARY_LIST}}
+                <ul id="summaryList" style="list-style: none; line-height: 1.8;">
+                    <li><strong>Market Pulse</strong>: The S&P 500 (SPY) dipped slightly from record levels as retail
+                        sales volatility sparked investor caution.</li>
+                    <li><strong>Branding Shift</strong>: Intelligence Hub is now formally the **Daily Report**,
+                        optimized for vertical readability and deep-linking.</li>
+                    <li><strong>Supply Constraints</strong>: Intel stock declines as severe CPU shortages in China
+                        threaten server revenue through 2026.</li>
                 </ul>
             </div>
         </section>
@@ -378,8 +350,6 @@
         <section>
             <div class="section-header">
                 <h2>📈 Stock Performance</h2>
-                <span style="font-size: 0.9rem; color: var(--text-dim);">Baseline:
-                    <strong>{{MARKET_BASELINE}}</strong></span>
             </div>
             <div class="card">
                 <table class="stock-table">
@@ -393,7 +363,36 @@
                         </tr>
                     </thead>
                     <tbody id="stockBody">
-                        {{STOCK_TABLE_ROWS}}
+                        <tr>
+                            <td class="ticker-cell">MSFT</td>
+                            <td>Hold</td>
+                            <td>Recorded Today</td>
+                            <td class="trend-down">▼ Re-evaluating</td>
+                            <td>Melius downgrades MSFT citing hefty AI capital expenditure and cash flow risks. [13]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ticker-cell">INTC</td>
+                            <td>Declining</td>
+                            <td>Recorded Today</td>
+                            <td class="trend-down">▼ Supply Warning</td>
+                            <td>Warnings of server component delays in China; offsetting news of $100M AI investment.
+                                [17]</td>
+                        </tr>
+                        <tr>
+                            <td class="ticker-cell">TNL</td>
+                            <td>Featured</td>
+                            <td>Recorded Today</td>
+                            <td class="trend-up">▲ Admired</td>
+                            <td>Named to Forbes America's Best Large Employers List for 2026. [21]</td>
+                        </tr>
+                        <tr>
+                            <td class="ticker-cell">RDW</td>
+                            <td>$9.24</td>
+                            <td>Closing Today</td>
+                            <td class="trend-up">▲ Buy Rating</td>
+                            <td>Maintains consensus "Buy" rating; significant Rule 144 sale filed. [25]</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -409,11 +408,26 @@
                 <div
                     style="font-size: 0.8rem; text-transform: uppercase; color: #a855f7; margin-bottom: 0.5rem; letter-spacing: 1px; font-weight: 600;">
                     AI Knowledge</div>
-                <div class="term" style="font-size: 1.6rem;">{{AI_WORD}}</div>
-                <p style="font-size: 0.95rem; line-height: 1.6;">{{AI_WORD_DEFINITION}}</p>
+                <div class="term" style="font-size: 1.6rem;">Product Feasibility Risk</div>
+                <p style="font-size: 0.95rem; line-height: 1.6;">One of Marty Cagan's "Four Critical Risks," redefined
+                    for the AI era as the challenge of possessing the necessary data and guardrails to move a model from
+                    prototype to product. [1]</p>
             </div>
             <div class="card" id="aiSection">
-                {{AI_TOOLING_CONTENT}}
+                <div class="content-item">
+                    <h3>Remote Writing Jobs Surge (Lenny Rachitsky)</h3>
+                    <p>Lenny's latest newsletter highlights a massive shift in the job market with 45+ new remote
+                        writing roles, many focused on human-in-the-loop AI content generation. [4]</p>
+                    <a href="https://lennysnewsletter.com/p/45-new-remote-writing-jobs" target="_blank"
+                        class="source-tag" title="View Source Article">View Article</a>
+                </div>
+                <div class="content-item">
+                    <h3>AI Risk Mitigation Strategy (Marty Cagan)</h3>
+                    <p>Cagan emphasizes that prototyping is now the primary tool for mitigating the "feasibility" and
+                        "viability" risks inherent in LLM-based product development. [1]</p>
+                    <a href="https://www.youtube.com/watch?v=specific-video-id" target="_blank" class="source-tag"
+                        title="View Article">View Video Source</a>
+                </div>
             </div>
         </section>
 
@@ -423,53 +437,30 @@
                 <h2>🏨 Hospitality Tech</h2>
             </div>
             <div class="card" id="hospitalitySection">
-                {{HOSPITALITY_CONTENT}}
+                <div class="content-item">
+                    <h3>Forbes America's Best Large Employers</h3>
+                    <p>Travel + Leisure (TNL) makes the 2026 list, signaling strong operational culture amidst secondary
+                        industry shifts. [21]</p>
+                    <a href="https://www.forbes.com/lists/americas-best-large-employers/" target="_blank"
+                        class="source-tag" title="View Article">View Forbes List</a>
+                </div>
             </div>
         </section>
 
         <footer style="margin-top: 5rem; text-align: center; color: var(--text-dim); opacity: 0.5;">
-            Refreshed at {{GENERATION_TIME}} &bull; Antigravity Engine v2.0
+            Refreshed at Feb 10, 2026, 4:45 PM EST &bull; Daily Report Engine v2.5
         </footer>
     </main>
 
     <script>
-        // Load Manifest and Populate Sidebar
-        async function loadHistory() {
-            try {
-                const response = await fetch('reports_manifest.json');
-                const manifest = await response.json();
-                const historyList = document.getElementById('historyList');
-                historyList.innerHTML = '';
-
-                manifest.forEach(report => {
-                    const li = document.createElement('li');
-                    li.className = 'history-item';
-                    const activeClass = window.location.href.includes(report.filename) ? 'active' : '';
-                    li.innerHTML = `<a href="${report.filename}" class="history-link ${activeClass}">${report.date} - ${report.title}</a>`;
-                    historyList.appendChild(li);
-                });
-            } catch (e) {
-                console.log("Manifest not found or error loading history.");
-            }
-        }
-
         function searchContent() {
             const query = document.getElementById('searchBar').value.toLowerCase();
-            const items = document.querySelectorAll('.content-item, .history-item, tr');
-
+            const items = document.querySelectorAll('.content-item, tr, li');
             items.forEach(item => {
                 const text = item.innerText.toLowerCase();
-                if (text.includes(query)) {
-                    item.style.display = "";
-                    if (item.classList.contains('content-item')) item.style.opacity = "1";
-                } else {
-                    item.style.display = "none";
-                }
+                item.style.display = text.includes(query) ? "" : "none";
             });
         }
-
-        // Initialize
-        loadHistory();
     </script>
 </body>
 

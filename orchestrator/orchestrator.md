@@ -1,4 +1,4 @@
-# Content Curation Orchestrator
+# Daily Report Orchestrator
 
 ## Global Rules
 
@@ -15,6 +15,7 @@
 3. **Filter**: Remove duplicates and irrelevant noise.
 4. **Formatter**: Apply the `dashboard_template.html` and premium styling.
 5. **Arbiter**: Evaluate the final HTML report for quality and correctness.
+6. **Manifest Update**: Update `reports_manifest.json` with the new report's metadata.
 
 ## Domain configuration
 

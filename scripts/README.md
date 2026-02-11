@@ -2,6 +2,21 @@
 
 This guide explains how to automate your Daily Intelligence Report using Windows built-in tools.
 
+### ⚡ Option 2: No-Admin Automation (Startup Folder)
+
+If you cannot use Task Scheduler due to administrative restrictions:
+
+1. Locate `RunNow.bat` in the root project directory.
+2. Press `Win + R`, type `shell:startup`, and hit Enter.
+3. Right-click `RunNow.bat`, select **Copy**, then **Paste Shortcut** into the Startup folder.
+4. **Result**: The report will automatically generate and email every time you log in to your computer.
+
+---
+
+### Manual Trigger
+
+Double-click `RunNow.bat` at any time to generate a report on-demand.
+
 ## Phase 1: Gmail App Password
 
 1. Go to your [Google Account Security settings](https://myaccount.google.com/security).
