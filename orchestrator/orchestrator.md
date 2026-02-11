@@ -15,7 +15,7 @@
 2. **Summarizer**: Distill the raw content into key points. Output must conform to `SummarizerOutput`.
 3. **Filter**: Remove duplicates and irrelevant noise. Output must conform to `FilterOutput`.
 4. **Formatter**: Apply the `dashboard_template.html` and premium styling. Output must conform to `FormatterOutput`.
-5. **URL Validation**: Run `scripts/validate_urls.ps1` against the generated HTML. Log results.
+5. **URL Validation**: Run `scripts/validate_urls.ps1` against the generated HTML. Log results. If the validation fails, remove the article from the report.
 6. **Arbiter**: Evaluate the final HTML report for quality and correctness. Output must conform to `ArbiterOutput`.
 7. **Manifest Update**: Run `scripts/build_manifest.ps1` to rebuild `reports_manifest.json`.
 8. **Structure Test**: Run `scripts/test_report_structure.ps1` as a final gate.
