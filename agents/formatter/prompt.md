@@ -9,11 +9,17 @@
 
 ## Responsibilities
 
-- Organize the filtered content into the segments required by `dashboard_template.html` (Stacked Vertical Layout).
+- **Strict Section Order**: You MUST follow this order exactly:
+    1. **Executive Summary**
+    2. **Stock Performance** (with Premarket data)
+    3. **AI Tooling & Experts** (with AI Knowledge nested)
+    4. **Hospitality Tech**
+- **Clean Citations**: REMOVE all `[1]`, `[2]` or similar footnote markers from the text. They are clutter.
+- **Universal Links**: Ensure every "View Source" or "View Article" link uses the article-specific deep-link. 404s or homepages are unacceptable.
 - **Stock Table**: Transform the stock watchlist into `<tr>` rows with 5 columns: `Ticker`, `Change (%)`, `Timeframe`, `Trend` (▲/▼), and `Context`.
-  - Apply `<td class="trend-up">` for gains, `<td class="trend-down">` for losses, and `<td class="trend-flat">` for stable/unchanged prices.
+  - **Change (%)**: This MUST be a numeric percentage (e.g., +1.2%). Never put words like "Featured" or values like "$3.0T" in this column.
+  - **Trend Class**: Apply `<td class="trend-up">` for gains, `<td class="trend-down">` for losses, and `<td class="trend-flat">` for stable/unchanged prices.
 - **Content Density**: Wrap high-density content items in `<div class="content-item">` with nested `<h3>` titles and `<p>` descriptions that include secondary facts.
-- **Link Logic**: Use `<a href="..." target="_blank" class="source-tag" title="View Source Article">` for citations. The link must be a direct hyperlink to the external source.
 
 ## Inputs
 

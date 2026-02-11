@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Report - {{REPORT_DATE}}</title>
+    <title>Daily Report - Feb 11, 2026</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -40,7 +40,6 @@
             overflow-x: hidden;
         }
 
-        /* Sidebar Styling */
         .sidebar {
             width: var(--sidebar-width);
             background: var(--sidebar-bg);
@@ -83,7 +82,11 @@
         }
 
         .sidebar .search-icon {
+            position: absolute;
             left: 0.8rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-dim);
             font-size: 0.9rem;
         }
 
@@ -119,7 +122,6 @@
             border-color: rgba(99, 102, 241, 0.3);
         }
 
-        /* Main Content */
         .main-content {
             margin-left: var(--sidebar-width);
             flex-grow: 1;
@@ -144,38 +146,6 @@
             -webkit-text-fill-color: transparent;
         }
 
-        .search-container {
-            position: relative;
-            width: 400px;
-        }
-
-        #searchBar {
-            width: 100%;
-            padding: 0.9rem 1rem 0.9rem 3rem;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid var(--glass-border);
-            border-radius: 14px;
-            color: white;
-            font-family: inherit;
-            outline: none;
-            transition: all 0.3s;
-        }
-
-        #searchBar:focus {
-            border-color: var(--primary);
-            background: rgba(255, 255, 255, 0.05);
-            box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.15);
-        }
-
-        .search-icon {
-            position: absolute;
-            left: 1.2rem;
-            top: 50%;
-            transform: translateY(-50%);
-            color: var(--text-dim);
-        }
-
-        /* Stacked Section Styling */
         section {
             margin-bottom: 4rem;
             animation: fadeIn 0.6s ease-out;
@@ -202,13 +172,11 @@
             backdrop-filter: blur(10px);
         }
 
-        /* Executive Summary Pulse */
         .summary-card {
             border-left: 4px solid var(--primary);
             background: linear-gradient(to right, rgba(99, 102, 241, 0.05), transparent);
         }
 
-        /* Stock Table Enhanced */
         .stock-table {
             width: 100%;
             border-collapse: collapse;
@@ -249,7 +217,6 @@
             opacity: 0.8;
         }
 
-        /* Content List */
         .content-item {
             margin-bottom: 2rem;
             padding-bottom: 2rem;
@@ -275,7 +242,6 @@
             margin-bottom: 1rem;
         }
 
-        /* Improved Link Tooltip CSS */
         .source-tag {
             display: inline-flex;
             align-items: center;
@@ -297,7 +263,6 @@
             transform: translateY(-2px);
         }
 
-        /* Animations */
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -310,14 +275,13 @@
             }
         }
 
-        /* Word of Day Highlight */
         .word-box {
             background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%);
             border: 1px solid rgba(168, 85, 247, 0.2);
         }
 
         .word-box .term {
-            font-size: 2rem;
+            font-size: 2.2rem;
             font-weight: 700;
             color: #a855f7;
             margin-bottom: 0.5rem;
@@ -351,15 +315,14 @@
         <nav>
             <ul class="history-list" id="historyList">
                 <!-- Populated via manifest.json -->
-                <li class="history-item"><a href="#" class="history-link active">Current Report</a></li>
             </ul>
         </nav>
     </aside>
 
     <main class="main-content">
         <header>
-            <h1>Daily Report <span
-                    style="font-weight: 300; color: var(--text-dim); margin-left: 10px;">{{REPORT_DATE}}</span></h1>
+            <h1>Daily Report <span style="font-weight: 300; color: var(--text-dim); margin-left: 10px;">Feb 11,
+                    2026</span></h1>
         </header>
 
         <!-- Executive Summary -->
@@ -368,8 +331,13 @@
                 <h2>🚀 Executive Summary</h2>
             </div>
             <div class="card summary-card">
-                <ul id="summaryList" style="list-style: none;">
-                    {{EXECUTIVE_SUMMARY_LIST}}
+                <ul id="summaryList" style="list-style: none; line-height: 1.8;">
+                    <li><strong>Market Sentiment</strong>: Bearish rotation into safety (Dow record) while Tech/S&P dip
+                        0.3% on AI capex anxiety and stagnant retail sales.</li>
+                    <li><strong>PM Impact</strong>: Supply chain risks in China (Intel) and antitrust scrutiny
+                        (Trip.com) are emerging as primary blockers for international expansion.</li>
+                    <li><strong>AI Trend</strong>: The shift from "Intelligence" to "Utility" is accelerating, with SMEs
+                        getting AI training (Booking) and PMs focusing on "Agentic Orchestration."</li>
                 </ul>
             </div>
         </section>
@@ -378,8 +346,7 @@
         <section>
             <div class="section-header">
                 <h2>📈 Stock Performance</h2>
-                <span style="font-size: 0.9rem; color: var(--text-dim);">Baseline:
-                    <strong>{{MARKET_BASELINE}}</strong></span>
+                <span style="font-size: 0.9rem; color: var(--text-dim);">Baseline: <strong>Mixed/Bearish</strong></span>
             </div>
             <div class="card">
                 <table class="stock-table">
@@ -393,7 +360,41 @@
                         </tr>
                     </thead>
                     <tbody id="stockBody">
-                        {{STOCK_TABLE_ROWS}}
+                        <tr>
+                            <td class="ticker-cell">MSFT</td>
+                            <td>$3.0T Cap</td>
+                            <td>Recorded Today</td>
+                            <td class="trend-up">▲ Mixed/Positive</td>
+                            <td>Bullish monetization data offset by Melius cap-ex concerns. [26]</td>
+                        </tr>
+                        <tr>
+                            <td class="ticker-cell">INTC</td>
+                            <td>-1.5% Approx</td>
+                            <td>Recorded Today</td>
+                            <td class="trend-down">▼ CPU Shortage</td>
+                            <td>Severe supply constraints in China impacting server chips. [17]</td>
+                        </tr>
+                        <tr>
+                            <td class="ticker-cell">TNL</td>
+                            <td>Featured</td>
+                            <td>Recorded Today</td>
+                            <td class="trend-up">▲ Forbes Best</td>
+                            <td>Included in Forbes 2026 Best Large Employers; earnings Feb 18. [21]</td>
+                        </tr>
+                        <tr>
+                            <td class="ticker-cell">RDW</td>
+                            <td>-11% Monthly</td>
+                            <td>Recorded Today</td>
+                            <td class="trend-down">▼ Insider Selling</td>
+                            <td>Price pressure remains after major shareholder exits. [19]</td>
+                        </tr>
+                        <tr>
+                            <td class="ticker-cell">BITU</td>
+                            <td>-44.5% Monthly</td>
+                            <td>Recorded Today</td>
+                            <td class="trend-down">▼ Leverage Decay</td>
+                            <td>Collapse in 2x BTC tracker as support at $65k is tested. [29]</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -409,11 +410,32 @@
                 <div
                     style="font-size: 0.8rem; text-transform: uppercase; color: #a855f7; margin-bottom: 0.5rem; letter-spacing: 1px; font-weight: 600;">
                     AI Knowledge</div>
-                <div class="term" style="font-size: 1.6rem;">{{AI_WORD}}</div>
-                <p style="font-size: 0.95rem; line-height: 1.6;">{{AI_WORD_DEFINITION}}</p>
+                <div class="term" style="font-size: 1.6rem;">Agentic Orchestration</div>
+                <p style="font-size: 0.95rem; line-height: 1.6;">The process of coordinating multiple autonomous AI
+                    agents to solve complex workflows without human micro-management. [The Rundown AI]</p>
             </div>
             <div class="card" id="aiSection">
-                {{AI_TOOLING_CONTENT}}
+                <div class="content-item">
+                    <h3>Building AI Product Sense (Marily Nika via Lenny Rachitsky)</h3>
+                    <p>PMs must evolve from simple prompting to "agent engineering," focusing on cognitive architecture
+                        rather than just output. [4]</p>
+                    <a href="https://www.lennysnewsletter.com/p/building-ai-product-sense-part-2" target="_blank"
+                        class="source-tag" title="View Article">View Article</a>
+                </div>
+                <div class="content-item">
+                    <h3>AI Strategy & Product Leadership (Tal Raviv)</h3>
+                    <p>Raviv advocates for building AI copilots as the primary training ground for modern product
+                        managers. [15]</p>
+                    <a href="https://maven.com/tal-raviv/ai-product-sense" target="_blank" class="source-tag"
+                        title="View Source">Learn More</a>
+                </div>
+                <div class="content-item">
+                    <h3>A Fifth Year of Strategy (Roger Martin)</h3>
+                    <p>Strategy must remain tech-informed but leader-led to avoid the "featuralization" trap of AI. [13]
+                    </p>
+                    <a href="https://rogermartin.substack.com/p/a-fifth-year-of-strategy" target="_blank"
+                        class="source-tag" title="View Article">View Substack</a>
+                </div>
             </div>
         </section>
 
@@ -423,47 +445,58 @@
                 <h2>🏨 Hospitality Tech</h2>
             </div>
             <div class="card" id="hospitalitySection">
-                {{HOSPITALITY_CONTENT}}
+                <div class="content-item">
+                    <h3>Trip.com Antitrust Investigation</h3>
+                    <p>China regulators probe Trip.com for alleged abuse of market position and monopolistic practices.
+                        Shares plunged significantly. [30]</p>
+                    <a href="https://www.thestar.com.my/business/business-news/2026/02/11/china-regulators-open-antitrust-probe-into-tripcom"
+                        target="_blank" class="source-tag" title="View Source">View Article</a>
+                </div>
+                <div class="content-item">
+                    <h3>Expedia Acquisitions & B2B Growth</h3>
+                    <p>Acquisition of Tiqets signals heavy push into experiences; Q4 results expected Feb 12 with 7%
+                        growth forecast. [6]</p>
+                    <a href="https://www.nasdaq.com/market-activity/stocks/expe" target="_blank" class="source-tag"
+                        title="View Article">Market Activity</a>
+                </div>
+                <div class="content-item">
+                    <h3>Booking.com AI SME Partnership</h3>
+                    <p>Collaborating with OpenAI to train 20,000 SMEs in AI adoption, while facing Amsterdam lawsuits
+                        over price clauses. [22]</p>
+                    <a href="https://www.booking.com" target="_blank" class="source-tag" title="View Source">Official
+                        Site</a>
+                </div>
             </div>
         </section>
 
         <footer style="margin-top: 5rem; text-align: center; color: var(--text-dim); opacity: 0.5;">
-            Refreshed at {{GENERATION_TIME}} &bull; Antigravity Engine v2.0
+            Refreshed at Feb 11, 2026, 8:55 AM EST &bull; Daily Report Engine v2.5
         </footer>
     </main>
 
     <script>
-        // Injected Manifest and Populate Sidebar
-        const manifest = {{ MANIFEST_JSON }};
-
-        function loadHistory() {
-            const historyList = document.getElementById('historyList');
-            historyList.innerHTML = '';
-            manifest.forEach(report => {
-                const li = document.createElement('li');
-                li.className = 'history-item';
-                const activeClass = window.location.href.includes(report.filename) ? 'active' : '';
-                li.innerHTML = `<a href="${report.filename}" class="history-link ${activeClass}">${report.date} - ${report.title}</a>`;
-                historyList.appendChild(li);
-            });
+        async function loadHistory() {
+            try {
+                const response = await fetch('reports_manifest.json');
+                const manifest = await response.json();
+                const historyList = document.getElementById('historyList');
+                historyList.innerHTML = '';
+                manifest.forEach(report => {
+                    const li = document.createElement('li');
+                    li.className = 'history-item';
+                    const activeClass = window.location.href.includes(report.filename) ? 'active' : '';
+                    li.innerHTML = `<a href="${report.filename}" class="history-link ${activeClass}">${report.date} - ${report.title}</a>`;
+                    historyList.appendChild(li);
+                });
+            } catch (e) { console.log("Manifest error."); }
         }
-
         function searchContent() {
             const query = document.getElementById('searchBar').value.toLowerCase();
-            const items = document.querySelectorAll('.content-item, .history-item, tr');
-
+            const items = document.querySelectorAll('.content-item, tr, .history-item');
             items.forEach(item => {
-                const text = item.innerText.toLowerCase();
-                if (text.includes(query)) {
-                    item.style.display = "";
-                    if (item.classList.contains('content-item')) item.style.opacity = "1";
-                } else {
-                    item.style.display = "none";
-                }
+                item.style.display = item.innerText.toLowerCase().includes(query) ? "" : "none";
             });
         }
-
-        // Initialize
         loadHistory();
     </script>
 </body>

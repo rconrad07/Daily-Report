@@ -1,5 +1,27 @@
 [
     {
+        "date": "2026-02-11",
+        "filename": "Daily_Report_2026-02-11_v5.html",
+        "title": "Daily Report - Refined (Premarket)",
+        "keywords": [
+            "Premarket",
+            "Deep Links",
+            "Order",
+            "No Footnotes"
+        ]
+    },
+    {
+        "date": "2026-02-11",
+        "filename": "Daily_Report_2026-02-11.html",
+        "title": "Daily Report - Refined Layout",
+        "keywords": [
+            "Trip.com Probe",
+            "Lenny",
+            "Orchestration",
+            "INTC"
+        ]
+    },
+    {
         "date": "2026-02-10",
         "filename": "Daily_Report_2026-02-10_v4.html",
         "title": "Daily Report - Refined Layout",
@@ -17,22 +39,7 @@
         "keywords": [
             "Green",
             "Red",
-            "Grey",
-            "Batch",
-            "Non-Admin"
-        ]
-    },
-    {
-        "date": "2026-02-10",
-        "filename": "Daily_Report_2026-02-10_v2.html",
-        "title": "Daily Report - Redesigned Hub",
-        "keywords": [
-            "Vibe Coding",
-            "Cagan",
-            "Rachitsky",
-            "Expedia",
-            "MSFT",
-            "Sidebar"
+            "Grey"
         ]
     }
 ]

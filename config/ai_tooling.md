@@ -24,16 +24,16 @@ Add additional weighting (appear more frequently in reports (e.g. at least 3-4 t
 
 ## Primary Sources of Interest
 
-- Lenny's Podcast
-- The AI Daily Brief
-- YouTube
-- X (Twitter)
-- Mavin
-- The Product School
-- Claude Blog
-- Cursor Blog
-- Substack
-- ProductCompass
+- [Lenny's Podcast](https://www.lennyspodcast.com/)
+- [AI Daily Brief](https://www.youtube.com/@AIDailyBrief)
+- [X (Twitter)](https://x.com/home)
+- [Mavin](https://mavin.com/)
+- [The Product School](https://productschool.com/blog)
+- [Claude Blog Posts](https://claude.com/blog)
+- [Cursor Blog Posts](https://cursor.sh/blog)
+- [Substack Posts](https://substack.com/)
+- [ProductCompass](https://www.productcompass.pm/)
+- [Techradar](https://www.techradar.com/)
 
 ## Topics and Keywords
 
