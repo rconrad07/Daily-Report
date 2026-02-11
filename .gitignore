@@ -1,0 +1,21 @@
+# Daily Report - .gitignore
+
+# Logs
+logs/
+
+# Generated reports (tracked via manifest, not git)
+reports/Daily_Report_*.html
+reports/Daily_Report_*.md
+reports/summaries_*.md
+
+# Archived reports
+reports/20*/
+
+# Environment
+.env
+*.tmp
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store

@@ -1,45 +1,32 @@
-[
+﻿[
     {
-        "date": "2026-02-11",
-        "filename": "Daily_Report_2026-02-11_v5.html",
-        "title": "Daily Report - Refined (Premarket)",
-        "keywords": [
-            "Premarket",
-            "Deep Links",
-            "Order",
-            "No Footnotes"
-        ]
+        "date":  "2026-02-11",
+        "filename":  "Daily_Report_2026-02-11_v5.html",
+        "title":  "Feb-11 (v5)"
     },
     {
-        "date": "2026-02-11",
-        "filename": "Daily_Report_2026-02-11.html",
-        "title": "Daily Report - Refined Layout",
-        "keywords": [
-            "Trip.com Probe",
-            "Lenny",
-            "Orchestration",
-            "INTC"
-        ]
+        "date":  "2026-02-11",
+        "filename":  "Daily_Report_2026-02-11.html",
+        "title":  "Feb-11"
     },
     {
-        "date": "2026-02-10",
-        "filename": "Daily_Report_2026-02-10_v4.html",
-        "title": "Daily Report - Refined Layout",
-        "keywords": [
-            "Deep Links",
-            "Sidebar Search",
-            "Branding",
-            "AI Knowledge"
-        ]
+        "date":  "2026-02-10",
+        "filename":  "Daily_Report_2026-02-10_v4.html",
+        "title":  "Feb-10 (v4)"
     },
     {
-        "date": "2026-02-10",
-        "filename": "Daily_Report_2026-02-10_v3.html",
-        "title": "Daily Report - Color-Coded Trends",
-        "keywords": [
-            "Green",
-            "Red",
-            "Grey"
-        ]
+        "date":  "2026-02-10",
+        "filename":  "Daily_Report_2026-02-10_v3.html",
+        "title":  "Feb-10 (v3)"
+    },
+    {
+        "date":  "2026-02-10",
+        "filename":  "Daily_Report_2026-02-10_v2.html",
+        "title":  "Feb-10 (v2)"
+    },
+    {
+        "date":  "2026-02-10",
+        "filename":  "Daily_Report_2026-02-10.html",
+        "title":  "Feb-10"
     }
 ]

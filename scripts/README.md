@@ -1,56 +1,44 @@
-# 9 AM Report Automation Setup Guide
+# Daily Report — Setup & Automation Guide
 
-This guide explains how to automate your Daily Intelligence Report using Windows built-in tools.
-
-### ⚡ Option 2: No-Admin Automation (Startup Folder)
-
-If you cannot use Task Scheduler due to administrative restrictions:
-
-1. Locate `RunNow.bat` in the root project directory.
-2. Press `Win + R`, type `shell:startup`, and hit Enter.
-3. Right-click `RunNow.bat`, select **Copy**, then **Paste Shortcut** into the Startup folder.
-4. **Result**: The report will automatically generate and email every time you log in to your computer.
-
----
-
-### Manual Trigger
+## Quick Start
 
 Double-click `RunNow.bat` at any time to generate a report on-demand.
 
-## Phase 1: Gmail App Password
+## Automated Daily Execution (No Admin Required)
 
-1. Go to your [Google Account Security settings](https://myaccount.google.com/security).
-2. Enable **2-Step Verification** if not already active.
-3. Search for **App passwords** in the search bar.
-4. Create a new password:
-    - **App**: Mail
-    - **Device**: Windows Computer
-5. Copy the **16-character code** (e.g., `abcd efgh ijkl mnop`).
+1. Locate `RunNow.bat` in the root project directory.
+2. Press `Win + R`, type `shell:startup`, and hit Enter.
+3. Right-click `RunNow.bat` → **Copy** → **Paste Shortcut** into the Startup folder.
+4. **Result**: The report pipeline runs every time you log in.
 
-## Phase 2: Configuration
+## Pipeline Steps (What RunNow.bat Does)
 
-1. Open `config/email_config.json`.
-2. Update the `sender_email` and `recipient_email` with your details.
+1. Rebuilds `reports_manifest.json` from the `/reports/` directory.
+2. Validates all external URLs in the latest report.
+3. Logs results to `/logs/`.
 
-## Phase 3: Setup Task Scheduler
+## Configuration
 
-1. Press `Win + R`, type `taskschd.msc`, and hit Enter.
-2. Click **Create Basic Task...** on the right.
-3. **Name**: Daily Intelligence Report.
-4. **Trigger**: Daily, recur every 1 day, select **9:00:00 AM**.
-5. **Action**: Start a program.
-6. **Program/script**: `powershell.exe`
-7. **Add arguments (Copy & Paste)**:
-    - Replace `[PATH_TO_SCRIPT]` with the full path to `SendReport.ps1`.
-    - Replace `[PASSWORD]` with your 16-character App Password.
+| File | Purpose |
+|:---|:---|
+| `config/tickers.md` | Stock watchlist |
+| `config/ai_tooling.md` | AI experts, sources, and keywords |
+| `config/hospitality_tech.md` | Hospitality competitors and topics |
 
-    ```text
-    -ExecutionPolicy Bypass -File "[PATH_TO_SCRIPT]" -AppPassword "[PASSWORD]"
-    ```
+## Agent Pipeline
 
-8. Click **Finish**.
+```
+Curator → Summarizer → Filter → Formatter → Arbiter
+```
 
-## Phase 4: Verification
+Each agent's behavior is defined in `agents/<name>/prompt.md`. Data contracts between agents are defined in `schemas/agent_contracts.json`.
 
-- To test immediately, find your task in the "Task Scheduler Library", right-click it, and select **Run**.
-- Check `logs/email_log.txt` (to be implemented) or your inbox for the report.
+## Validation & Testing
+
+- **URL Validation**: `powershell -File scripts\validate_urls.ps1` — HEAD-requests all links in the latest report.
+- **Structure Test**: `powershell -File scripts\test_report_structure.ps1` — Validates section order, stock data, and footnote markers.
+- **Manifest Rebuild**: `powershell -File scripts\build_manifest.ps1` — Regenerates sidebar history from file system.
+
+## Report Archives
+
+Reports are stored in `reports/` with the naming convention `Daily_Report_YYYY-MM-DD[_vN].html`. The sidebar in each report shows historical entries as `"MMM-DD"` for easy scanning.

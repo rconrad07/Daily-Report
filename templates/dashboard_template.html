@@ -443,20 +443,25 @@
                 const li = document.createElement('li');
                 li.className = 'history-item';
                 const activeClass = window.location.href.includes(report.filename) ? 'active' : '';
-                li.innerHTML = `<a href="${report.filename}" class="history-link ${activeClass}">${report.date} - ${report.title}</a>`;
+                // Use the short title (e.g. "Feb-10") from the manifest
+                li.innerHTML = `<a href="${report.filename}" class="history-link ${activeClass}">${report.title}</a>`;
+                // Store keywords as data attribute for search
+                li.dataset.keywords = (report.keywords || []).join(' ').toLowerCase();
+                li.dataset.date = report.date;
                 historyList.appendChild(li);
             });
         }
 
         function searchContent() {
             const query = document.getElementById('searchBar').value.toLowerCase();
-            const items = document.querySelectorAll('.content-item, .history-item, tr');
+            const items = document.querySelectorAll('.history-item');
 
             items.forEach(item => {
                 const text = item.innerText.toLowerCase();
-                if (text.includes(query)) {
+                const keywords = item.dataset.keywords || '';
+                const date = item.dataset.date || '';
+                if (text.includes(query) || keywords.includes(query) || date.includes(query)) {
                     item.style.display = "";
-                    if (item.classList.contains('content-item')) item.style.opacity = "1";
                 } else {
                     item.style.display = "none";
                 }

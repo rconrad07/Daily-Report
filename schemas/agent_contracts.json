@@ -1,0 +1,331 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Daily Report Agent I/O Contracts",
+    "description": "Defines the input/output data contracts between pipeline agents.",
+    "definitions": {
+        "CuratorOutput": {
+            "description": "Output from the Curator agent — raw content items grouped by domain.",
+            "type": "object",
+            "required": [
+                "date",
+                "items"
+            ],
+            "properties": {
+                "date": {
+                    "type": "string",
+                    "format": "date",
+                    "description": "Report date in YYYY-MM-DD format"
+                },
+                "market_baseline": {
+                    "type": "string",
+                    "description": "Curator's opinion on market direction (e.g., 'Bullish — SPY futures +0.4%')"
+                },
+                "ai_word_of_the_day": {
+                    "type": "object",
+                    "properties": {
+                        "term": {
+                            "type": "string"
+                        },
+                        "definition": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "term",
+                        "definition"
+                    ]
+                },
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "required": [
+                            "source_title",
+                            "source_url",
+                            "content",
+                            "domain",
+                            "impact"
+                        ],
+                        "properties": {
+                            "source_title": {
+                                "type": "string"
+                            },
+                            "source_url": {
+                                "type": "string",
+                                "format": "uri",
+                                "description": "MUST be a deep link, not a homepage"
+                            },
+                            "content": {
+                                "type": "string",
+                                "description": "Raw excerpt or summary"
+                            },
+                            "domain": {
+                                "type": "string",
+                                "enum": [
+                                    "stock",
+                                    "ai",
+                                    "hospitality"
+                                ]
+                            },
+                            "impact": {
+                                "type": "string",
+                                "enum": [
+                                    "high",
+                                    "medium",
+                                    "low"
+                                ]
+                            },
+                            "ticker": {
+                                "type": "string",
+                                "description": "Only for stock domain items"
+                            },
+                            "expert": {
+                                "type": "string",
+                                "description": "Expert name if attributable"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "SummarizerOutput": {
+            "description": "Output from the Summarizer — distilled summaries grouped by domain.",
+            "type": "object",
+            "required": [
+                "date",
+                "summaries"
+            ],
+            "properties": {
+                "date": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "market_baseline": {
+                    "type": "string"
+                },
+                "ai_word_of_the_day": {
+                    "type": "object",
+                    "properties": {
+                        "term": {
+                            "type": "string"
+                        },
+                        "definition": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "summaries": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "required": [
+                            "title",
+                            "summary",
+                            "source_url",
+                            "domain"
+                        ],
+                        "properties": {
+                            "title": {
+                                "type": "string"
+                            },
+                            "summary": {
+                                "type": "string",
+                                "description": "High-density summary with secondary facts"
+                            },
+                            "source_url": {
+                                "type": "string",
+                                "format": "uri"
+                            },
+                            "domain": {
+                                "type": "string",
+                                "enum": [
+                                    "stock",
+                                    "ai",
+                                    "hospitality"
+                                ]
+                            },
+                            "ticker": {
+                                "type": "string"
+                            },
+                            "change_pct": {
+                                "type": "string",
+                                "pattern": "^[+-]?\\d+\\.?\\d*%$",
+                                "description": "Numeric percentage only"
+                            },
+                            "timeframe": {
+                                "type": "string",
+                                "description": "e.g., 'premarket', '9 AM EST', 'prev close'"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "FilterOutput": {
+            "description": "Output from the Filter — deduplicated, ranked subset of summaries.",
+            "type": "object",
+            "required": [
+                "date",
+                "filtered_items"
+            ],
+            "properties": {
+                "date": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "market_baseline": {
+                    "type": "string"
+                },
+                "ai_word_of_the_day": {
+                    "type": "object",
+                    "properties": {
+                        "term": {
+                            "type": "string"
+                        },
+                        "definition": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "filtered_items": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "required": [
+                            "title",
+                            "summary",
+                            "source_url",
+                            "domain",
+                            "rank"
+                        ],
+                        "properties": {
+                            "title": {
+                                "type": "string"
+                            },
+                            "summary": {
+                                "type": "string"
+                            },
+                            "source_url": {
+                                "type": "string",
+                                "format": "uri"
+                            },
+                            "domain": {
+                                "type": "string",
+                                "enum": [
+                                    "stock",
+                                    "ai",
+                                    "hospitality"
+                                ]
+                            },
+                            "rank": {
+                                "type": "integer",
+                                "minimum": 1,
+                                "description": "Relevance rank within domain"
+                            },
+                            "ticker": {
+                                "type": "string"
+                            },
+                            "change_pct": {
+                                "type": "string"
+                            },
+                            "timeframe": {
+                                "type": "string"
+                            },
+                            "is_new": {
+                                "type": "boolean",
+                                "description": "True if this was not covered in previous reports"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "FormatterOutput": {
+            "description": "Output from the Formatter — the final HTML report file.",
+            "type": "object",
+            "required": [
+                "filename",
+                "sections_present"
+            ],
+            "properties": {
+                "filename": {
+                    "type": "string",
+                    "pattern": "^Daily_Report_\\d{4}-\\d{2}-\\d{2}(_v\\d+)?\\.html$"
+                },
+                "sections_present": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "enum": [
+                            "Executive Summary",
+                            "Stock Performance",
+                            "AI Tooling & Experts",
+                            "Hospitality Tech"
+                        ]
+                    },
+                    "minItems": 4,
+                    "uniqueItems": true
+                }
+            }
+        },
+        "ArbiterOutput": {
+            "description": "Output from the Arbiter — evaluation report.",
+            "type": "object",
+            "required": [
+                "score",
+                "pass",
+                "findings"
+            ],
+            "properties": {
+                "score": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 100
+                },
+                "pass": {
+                    "type": "boolean",
+                    "description": "True only if score >= 70 AND no critical failures"
+                },
+                "findings": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "required": [
+                            "category",
+                            "severity",
+                            "description"
+                        ],
+                        "properties": {
+                            "category": {
+                                "type": "string",
+                                "enum": [
+                                    "citations",
+                                    "stock_data",
+                                    "section_order",
+                                    "content_quality",
+                                    "deduplication"
+                                ]
+                            },
+                            "severity": {
+                                "type": "string",
+                                "enum": [
+                                    "critical",
+                                    "high",
+                                    "medium",
+                                    "low"
+                                ]
+                            },
+                            "description": {
+                                "type": "string"
+                            },
+                            "evidence": {
+                                "type": "string",
+                                "description": "Specific example from the report"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -474,10 +474,12 @@
 
     <script>
         const manifest = [
-            { "date": "2026-02-11", "filename": "Daily_Report_2026-02-11_v5.html", "title": "Daily Report - Fed v5", "keywords": ["Premarket", "Deep Links", "Order"] },
-            { "date": "2026-02-11", "filename": "Daily_Report_2026-02-11.html", "title": "Daily Report - Refined Layout", "keywords": ["Trip.com Probe", "Lenny", "Orchestration", "INTC"] },
-            { "date": "2026-02-10", "filename": "Daily_Report_2026-02-10_v4.html", "title": "Daily Report - Refined Layout", "keywords": ["Deep Links", "Sidebar Search", "Branding", "AI Knowledge"] },
-            { "date": "2026-02-10", "filename": "Daily_Report_2026-02-10_v3.html", "title": "Daily Report - Color-Coded Trends", "keywords": ["Green", "Red", "Grey"] }
+            { "date": "2026-02-11", "filename": "Daily_Report_2026-02-11_v5.html", "title": "Feb-11 (v5)", "keywords": ["Premarket", "Deep Links", "Order"] },
+            { "date": "2026-02-11", "filename": "Daily_Report_2026-02-11.html", "title": "Feb-11", "keywords": ["Trip.com Probe", "Lenny", "Orchestration", "INTC"] },
+            { "date": "2026-02-10", "filename": "Daily_Report_2026-02-10_v4.html", "title": "Feb-10 (v4)", "keywords": ["Deep Links", "Sidebar Search", "Branding", "AI Knowledge"] },
+            { "date": "2026-02-10", "filename": "Daily_Report_2026-02-10_v3.html", "title": "Feb-10 (v3)", "keywords": ["Green", "Red", "Grey"] },
+            { "date": "2026-02-10", "filename": "Daily_Report_2026-02-10_v2.html", "title": "Feb-10 (v2)", "keywords": [] },
+            { "date": "2026-02-10", "filename": "Daily_Report_2026-02-10.html", "title": "Feb-10", "keywords": [] }
         ];
 
         function loadHistory() {
@@ -487,7 +489,9 @@
                 const li = document.createElement('li');
                 li.className = 'history-item';
                 const activeClass = window.location.href.includes(report.filename) ? 'active' : '';
-                li.innerHTML = `<a href="${report.filename}" class="history-link ${activeClass}">${report.date} - ${report.title}</a>`;
+                li.innerHTML = `<a href="${report.filename}" class="history-link ${activeClass}">${report.title}</a>`;
+                li.dataset.keywords = (report.keywords || []).join(' ').toLowerCase();
+                li.dataset.date = report.date;
                 historyList.appendChild(li);
             });
         }
@@ -495,7 +499,14 @@
             const query = document.getElementById('searchBar').value.toLowerCase();
             const items = document.querySelectorAll('.history-item');
             items.forEach(item => {
-                item.style.display = item.innerText.toLowerCase().includes(query) ? "" : "none";
+                const text = item.innerText.toLowerCase();
+                const keywords = item.dataset.keywords || '';
+                const date = item.dataset.date || '';
+                if (text.includes(query) || keywords.includes(query) || date.includes(query)) {
+                    item.style.display = "";
+                } else {
+                    item.style.display = "none";
+                }
             });
         }
         loadHistory();

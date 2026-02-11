@@ -11,12 +11,14 @@
 
 ## Workflow Sequence
 
-1. **Curator**: Search and gather raw content for the 3 domains.
-2. **Summarizer**: Distill the raw content into key points.
-3. **Filter**: Remove duplicates and irrelevant noise.
-4. **Formatter**: Apply the `dashboard_template.html` and premium styling.
-5. **Arbiter**: Evaluate the final HTML report for quality and correctness.
-6. **Manifest Update**: Update `reports_manifest.json` with the new report's metadata.
+1. **Curator**: Search and gather raw content for the 3 domains. Output must conform to `CuratorOutput` in `schemas/agent_contracts.json`.
+2. **Summarizer**: Distill the raw content into key points. Output must conform to `SummarizerOutput`.
+3. **Filter**: Remove duplicates and irrelevant noise. Output must conform to `FilterOutput`.
+4. **Formatter**: Apply the `dashboard_template.html` and premium styling. Output must conform to `FormatterOutput`.
+5. **URL Validation**: Run `scripts/validate_urls.ps1` against the generated HTML. Log results.
+6. **Arbiter**: Evaluate the final HTML report for quality and correctness. Output must conform to `ArbiterOutput`.
+7. **Manifest Update**: Run `scripts/build_manifest.ps1` to rebuild `reports_manifest.json`.
+8. **Structure Test**: Run `scripts/test_report_structure.ps1` as a final gate.
 
 ## Domain configuration
 
