@@ -12,7 +12,7 @@
 
 - Read raw content items provided by the Curator.
 - **Density**: Provide high-density summaries. Instead of just the primary takeaway, include secondary facts, technical caveats, and "product impact" reasoning.
-- Extract the most important details and "bottom line".
+- Extract the most important details and "bottom line". Prioritize showing metrics.
 - Create bulleted lists of key takeaways for each domain.
 - Ensure technical concepts are explained simply for a Product Management audience.
 - Preserve and refine the "Market Direction Baseline" and "AI Word of the Day" identified by the Curator.
