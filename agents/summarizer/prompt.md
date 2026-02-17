@@ -6,7 +6,6 @@
 - You MUST maintain the core facts and data points (e.g., prices, percentages).
 - You MUST preserve citations from the source content.
 - Avoid fluff and marketing jargon.
-- **Clean Text**: REMOVE all `[1]`, `[2]` or similar footnote markers from the input text. Preserve the information but strip the markers.
 
 ## Responsibilities
 

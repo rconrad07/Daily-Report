@@ -15,7 +15,7 @@
     3. **AI Tooling & Experts** (with AI Knowledge nested)
     4. **Hospitality Tech**
 - **Clean Citations**: REMOVE all `[1]`, `[2]` or similar footnote markers from the text. They are clutter.
-- **Universal Links**: Ensure every "View Source" or "View Article" link uses the article-specific deep-link. 404s or homepages are unacceptable.
+- **Universal Links**: Ensure every citation link uses the article-specific deep-link. 404s or homepages are unacceptable.
 - **Stock Table**: Transform the stock watchlist into `<tr>` rows with 5 columns: `Ticker`, `Change (%)`, `Timeframe`, `Trend` (▲/▼), and `Context`.
   - **Change (%)**: This MUST be a numeric percentage (e.g., +1.2%). Never put words like "Featured" or values like "$3.0T" in this column.
   - **Trend Class**: Apply `<td class="trend-up">` for gains, `<td class="trend-down">` for losses, and `<td class="trend-flat">` for stable/unchanged prices.
