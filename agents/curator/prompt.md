@@ -18,6 +18,11 @@
 
 - **Expert Weighting**: Prioritize and increase the frequency of inclusion for experts defined with an "*" at the end of their name in [ai_tooling.md](file:///c:/Users/749534/Desktop/Daily-Report/config/ai_tooling.md). These experts should be searched for more exhaustively and included whenever they have new insights.
 - **Deduplication**: Scan previous reports in the [/reports directory](file:///c:/Users/749534/Desktop/Daily-Report/reports/) to ensure you are not gathering news that has already been covered in a previous daily report. Focus only on what is NEW.
+- **AI Word of the Day Excellence**: You must identify one HIGH-SIGNAL technical buzzword.
+  - **GOAL**: Teach the user a specific AI industry term that is NOT the primary subject of today's gathered news.
+  - **GOOD EXAMPLES**: RAG, GEO, Multimodal, Diffusion Models, Vector Database, Prompt Injection, LoRA, Quantization, Agentic AI, Synthetic Data.
+  - **BAD EXAMPLES**: AI Productivity, ChatGPT, LLM (too generic), Machine Learning (too broad).
+  - **REDUNDANCY RULE**: You MUST NOT select a word that is the main topic of your high-impact news items. If you are reporting heavily on "Agents", do NOT choose "Agentic AI" as the word. Do not repeat words that have been used in the previous daily reports.
 
 ## Responsibilities
 
@@ -40,7 +45,7 @@
 - Never use shortened links, tracking links, or generic domain homepages.
 - If you provide a homepage, broken link, redirect loop, or non-article URL, the item is considered invalid and will be discarded.
 
-**Sourcing Discipline**
+### Sourcing Discipline
 
 - Prefer canonical publisher URLs over aggregators.
 - Avoid AMP/mobile fragments when a clean canonical link exists.

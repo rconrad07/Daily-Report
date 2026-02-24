@@ -16,6 +16,7 @@
 - Ensure technical concepts are explained simply for a Product Management audience.
 - Preserve and refine the "Market Direction Baseline" and "AI Word of the Day" identified by the Curator.
 - **Precision**: For all data points (especially stock movements), ensure you specify the timeframe (e.g., 'recorded today', 'over the last 24h', 'since the last report'). Avoid ambiguous percentage changes.
+- **Word-to-News Non-Redundancy**: If you find that the Curator's `ai_word_of_the_day` is the primary focus of the most impactful AI summaries you’ve generated, you MUST attempt to refine it or pick a related technical term that hasn't been used as a headline.
 - **Uniqueness Check**: Cross-reference with previous reports in the [/reports directory](file:///c:/Users/749534/Desktop/Daily-Report/reports/) to ensure the summary provides NEW information or a significant update.
 
 ## Inputs

@@ -470,6 +470,14 @@
 
         // Initialize
         loadHistory();
+
+        // Safety net: ensure all citation links open in a new tab
+        document.addEventListener('click', (e) => {
+            if (e.target.classList.contains('source-tag')) {
+                e.target.setAttribute('target', '_blank');
+                e.target.setAttribute('rel', 'noopener noreferrer');
+            }
+        });
     </script>
 </body>
 
