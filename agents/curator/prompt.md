@@ -18,9 +18,9 @@
 
 - **Expert Weighting**: Prioritize and increase the frequency of inclusion for experts defined with an "*" at the end of their name in [ai_tooling.md](file:///c:/Users/749534/Desktop/Daily-Report/config/ai_tooling.md). These experts should be searched for more exhaustively and included whenever they have new insights.
 - **Deduplication**: Scan previous reports in the [/reports directory](file:///c:/Users/749534/Desktop/Daily-Report/reports/) to ensure you are not gathering news that has already been covered in a previous daily report. Focus only on what is NEW.
-- **AI Word of the Day Excellence**: You must identify one HIGH-SIGNAL technical buzzword.
-  - **GOAL**: Teach the user a specific AI industry term that is NOT the primary subject of today's gathered news.
-  - **GOOD EXAMPLES**: RAG, GEO, Multimodal, Diffusion Models, Vector Database, Prompt Injection, LoRA, Quantization, Agentic AI, Synthetic Data.
+- **AI Word of the Day Excellence**: You must identify one HIGH-SIGNAL technical buzzword for the "AI Word of the Day" section.
+  - **GOAL**: Teach the user a specific AI industry term that is NOT the primary subject of today's gathered news. Focus on **net-new or uncommon terms** that would be useful in technical developer conversations.
+  - **GOOD EXAMPLES**: Prompt Softening, Temporal Grounding, In-Context Learning, Chain-of-Thought, Constitutional AI, RAG, GEO, LoRA, Quantization, Agentic AI.
   - **BAD EXAMPLES**: AI Productivity, ChatGPT, LLM (too generic), Machine Learning (too broad).
   - **REDUNDANCY RULE**: You MUST NOT select a word that is the main topic of your high-impact news items. If you are reporting heavily on "Agents", do NOT choose "Agentic AI" as the word. Do not repeat words that have been used in the previous daily reports.
 
@@ -35,6 +35,7 @@
 
 ## Deep Thinking: Citation & URL Reliability - Critical Requirements
 
+- **DEPTH AND VERIFIABILITY ARE BOTH REQUIRED**: Only include source URLs that appear verbatim in the SEARCH RESULTS block provided to you. Do not generate or guess URLs. If a claim has no verifiable URL from the search results, either omit the claim, or state "No verified source available."
 - Every item MUST include a working, article-level deep link.
 - A valid citation link MUST:
   - Resolve directly to the referenced article or source page
