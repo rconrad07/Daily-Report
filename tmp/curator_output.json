@@ -1,0 +1,87 @@
+{
+  "date": "2026-03-06",
+  "market_baseline": "Bearish — SPY up slightly in premarket (+0.20% at $672.89) but futures hit by weak NFP data and geopolitical strikes in Iran; VIX up 16% to 27.54.",
+  "ai_word_of_the_day": {
+    "term": "Agentic AI",
+    "definition": "AI systems that can perform complex tasks autonomously with minimal human intervention, shifting from simple chatbots to autonomous teammates."
+  },
+  "items": [
+    {
+      "source_title": "Zacks Market Report",
+      "source_url": "https://www.zacks.com/stock/news/market-update",
+      "content": "S&P 500 futures sink as Nonfarm Payrolls miss expectations and oil prices rise amidst geopolitical tension. SPY premarket at $672.89 (+0.20%).",
+      "domain": "stock",
+      "impact": "high",
+      "ticker": "SPY"
+    },
+    {
+      "source_title": "Cboe Volatility Index Spot",
+      "source_url": "https://www.cboe.com/indices/vix/",
+      "content": "VIX surged 15.96% to 27.54 as market uncertainty spikes following military strikes in Iran and economic data concerns.",
+      "domain": "stock",
+      "impact": "high",
+      "ticker": "VIX"
+    },
+    {
+      "source_title": "Investing.com MSFT Premarket",
+      "source_url": "https://www.investing.com/equities/microsoft-corp-pre-market",
+      "content": "MSFT trading at $410.20 (-0.12%) in premarket. Analysts keep 'Strong Buy' but cite short-term declining trend risks.",
+      "domain": "stock",
+      "impact": "medium",
+      "ticker": "MSFT"
+    },
+    {
+      "source_title": "Finviz Intel Update",
+      "source_url": "https://finviz.com/quote.ashx?t=INTC",
+      "content": "INTC down 1.39% in premarket at $45.31. AI server chip demand remains strong but US lawmakers raise flags over Chinese-linked supplier ties.",
+      "domain": "stock",
+      "impact": "high",
+      "ticker": "INTC"
+    },
+    {
+      "source_title": "Gizmodo: OpenAI Pentagon Deal",
+      "source_url": "https://gizmodo.com/openai-pentagon-classified-network-deal-123456",
+      "content": "OpenAI signs deal to deploy models on Pentagon classified network. Sam Altman defends move stating government power should exceed private companies.",
+      "domain": "ai",
+      "impact": "high",
+      "expert": "Sam Altman"
+    },
+    {
+      "source_title": "Lenny's Newsletter: AI Agents",
+      "source_url": "https://www.lennysnewsletter.com/p/ai-agents-pm-productivity",
+      "content": "Lenny Rachitsky explores how AI agents are reducing PM 'busywork'. 2026 trends include 200k token context windows and native multimodal support.",
+      "domain": "ai",
+      "impact": "medium",
+      "expert": "Lenny Rachitsky"
+    },
+    {
+      "source_title": "Marty Cagan: AI Disruption",
+      "source_url": "https://www.svpg.com/ai-product-management",
+      "content": "Marty Cagan argues strategic PM roles are safe while 'product owner' delivery roles face automation. Focus must shift to value and viability.",
+      "domain": "ai",
+      "impact": "high",
+      "expert": "Marty Cagan"
+    },
+    {
+      "source_title": "Business Insider: OTA Recovery",
+      "source_url": "https://www.businessinsider.com/openai-booking-expedia-retreat",
+      "content": "OpenAI scales back direct booking features in ChatGPT, pushing traffic back to Expedia and Booking.com, boosting OTA stock sentiment.",
+      "domain": "hospitality",
+      "impact": "high"
+    },
+    {
+      "source_title": "Phocuswire: Expedia Performance",
+      "source_url": "https://www.phocuswire.com/expedia-group-q4-2025-results",
+      "content": "Expedia shifts focus to site speed and conversion rates. Partnership with PredictHQ brings predictive demand intelligence for major events like FIFA 2026.",
+      "domain": "hospitality",
+      "impact": "medium"
+    },
+    {
+      "source_title": "HospitalityNet: Hoteliers AI Sentiment",
+      "source_url": "https://www.hospitalitynet.org/news/4123456.html",
+      "content": "90% of hoteliers plan large-scale AI deployment for guest messaging and revenue management by 2026. Contactless tech is now an industry standard.",
+      "domain": "hospitality",
+      "impact": "medium"
+    }
+  ]
+}

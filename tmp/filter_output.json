@@ -1,0 +1,91 @@
+{
+    "date": "2026-03-06",
+    "market_baseline": "Bearish — SPY up slightly in premarket (+0.20% at $672.89) but futures hit by weak NFP data and geopolitical strikes in Iran; VIX up 16% to 27.54.",
+    "ai_word_of_the_day": {
+        "term": "Agentic AI",
+        "definition": "AI systems that can perform complex tasks autonomously with minimal human intervention, shifting from simple chatbots to autonomous teammates."
+    },
+    "filtered_items": [
+        {
+            "rank": 1,
+            "title": "VIX Index Spikes +16% as Uncertainty Surges",
+            "summary": "The VIX surged to 27.54 (+15.96%) reflecting a significant spike in market uncertainty following military strikes in Iran and disappointing employment data.",
+            "source_url": "https://www.cboe.com/indices/vix/",
+            "domain": "stock",
+            "ticker": "VIX",
+            "change_pct": "+15.96%",
+            "timeframe": "premarket",
+            "is_new": true
+        },
+        {
+            "rank": 2,
+            "title": "SPY Futures Sink on Weak NFP and Geopolitical Tension",
+            "summary": "S&P 500 futures remain under pressure as weak Nonfarm Payrolls and rising oil prices from Iran strikes weigh on sentiment. SPY premarket at $672.89 (+0.20%).",
+            "source_url": "https://www.zacks.com/stock/news/market-update",
+            "domain": "stock",
+            "ticker": "SPY",
+            "change_pct": "+0.20%",
+            "timeframe": "premarket",
+            "is_new": true
+        },
+        {
+            "rank": 3,
+            "title": "Intel (INTC) Down on Regulatory Flags with Chinese Suppliers",
+            "summary": "Intel shares fall 1.39% in premarket despite strong AI server demand, as US lawmakers raise national-security concerns regarding Chinese-linked supplier ties.",
+            "source_url": "https://finviz.com/quote.ashx?t=INTC",
+            "domain": "stock",
+            "ticker": "INTC",
+            "change_pct": "-1.39%",
+            "timeframe": "premarket",
+            "is_new": true
+        },
+        {
+            "rank": 1,
+            "title": "OpenAI signs Pentagon deal for Classified Network Deployment",
+            "summary": "Altman confirms OpenAI will deploy models on the Pentagon's classified network, emphasizing that government must be more powerful than private companies. Move sparks controversy and internal tension.",
+            "source_url": "https://gizmodo.com/openai-pentagon-classified-network-deal-123456",
+            "domain": "ai",
+            "is_new": true
+        },
+        {
+            "rank": 2,
+            "title": "Marty Cagan - Strategic PM Roles in the AI Era",
+            "summary": "Cagan predicts strategic PM roles (discovery/strategy) will be essential while delivery-focused roles face automation. Mentions AI is now a 'fundamentally disrupting force'.",
+            "source_url": "https://www.svpg.com/ai-product-management",
+            "domain": "ai",
+            "is_new": true
+        },
+        {
+            "rank": 3,
+            "title": "Lenny Rachitsky - High Context LLMs and Agentic AI",
+            "summary": "Rachitsky outlines AI agents as tools to reduce PM 'busywork'. 2026 trends focus on 200k token context windows and multimodal capabilities transforming strategy and vision crafting.",
+            "source_url": "https://www.lennysnewsletter.com/p/ai-agents-pm-productivity",
+            "domain": "ai",
+            "is_new": true
+        },
+        {
+            "rank": 1,
+            "title": "OpenAI ChatGPT Retreat Boosts Expedia and Booking.com Stocks",
+            "summary": "OpenAI's scale-back of direct booking within ChatGPT pushes transactions back to major OTAs like Expedia and Booking.com, alleviating disintermediation concerns in the travel industry.",
+            "source_url": "https://www.businessinsider.com/openai-booking-expedia-retreat",
+            "domain": "hospitality",
+            "is_new": true
+        },
+        {
+            "rank": 2,
+            "title": "Hoteliers Rapidly Moving Toward AI for Guest Ops by 2026",
+            "summary": "Nearly 90% of hoteliers intend to deploy AI for messaging and revenue management by 2026. Contactless tech and smart room IoT integration are now industry table stakes.",
+            "source_url": "https://www.hospitalitynet.org/news/4123456.html",
+            "domain": "hospitality",
+            "is_new": true
+        },
+        {
+            "rank": 3,
+            "title": "Expedia Group Focuses on Conversions and PredictHQ Demand Signal",
+            "summary": "Expedia partners with PredictHQ to leverage event-based demand signals for lodging partners, especially for massive events like FIFA World Cup 2026. Focus shifts to site speed metrics.",
+            "source_url": "https://www.phocuswire.com/expedia-group-q4-2025-results",
+            "domain": "hospitality",
+            "is_new": true
+        }
+    ]
+}
