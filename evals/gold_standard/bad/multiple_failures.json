@@ -1,0 +1,16 @@
+{
+  "id": "fixture_005",
+  "description": "Report with three injected failures: homepage link, non-numeric stock, and orphan footnote. Three judges must FAIL.",
+  "category": "bad",
+  "injected_failures": ["homepage_link", "non_numeric_stock_change", "orphan_footnote"],
+  "report_snippet": "<html><body><h2>Executive Summary</h2><p>Markets rebounded on March 10. This is driven by macroeconomic tailwinds [1].</p><h2>Stock Performance</h2><table><tr><th>Ticker</th><th>Change (%)</th></tr><tr><td>SPY</td><td>+0.40%</td></tr><!-- INJECTED_FAILURE: non_numeric_stock_change --><tr><td>BITU</td><td>Featured</td></tr></table><h2>AI Tooling &amp; Experts</h2><p>Expedia announced travel trends. <!-- INJECTED_FAILURE: homepage_link --><a href=\"https://www.expediagroup.com/\">View Article</a></p><!-- INJECTED_FAILURE: orphan_footnote; [1] above has no destination --><h2>Hospitality Tech</h2><p>Booking targets growth. <a href=\"https://www.investing.com/news/stock-market-news/booking-holdings-strategic-growth-targets-2026-34567\">View Article</a></p></body></html>",
+  "expected_verdicts": {
+    "citation_integrity": "FAIL",
+    "data_integrity": "FAIL",
+    "structural_compliance": "PASS",
+    "content_quality": "FAIL"
+  },
+  "expected_score": 25,
+  "arbiter_verdicts": null,
+  "notes": "Three of four judges must FAIL. Only Structural Compliance passes (sections are in correct order). Overall score is 25 (only the 25% structural weight survives)."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "fixture_001",
+  "description": "A well-formed report. All four Arbiter judges should return PASS.",
+  "category": "good",
+  "report_snippet": "<html><body><h2>Executive Summary</h2><p>Markets rebounded strongly on March 10.</p><h2>Stock Performance</h2><table><tr><th>Ticker</th><th>Change (%)</th></tr><tr><td>SPY</td><td>+0.40%</td></tr><tr><td>VIX</td><td>-7.00%</td></tr></table><h2>AI Tooling &amp; Experts</h2><p>Sam Altman discussed AGI timelines. <a href=\"https://www.mlq.ai/sam-altman-government-ai-development/\">View Article</a></p><h2>Hospitality Tech</h2><p>Booking Holdings targets 8% growth. <a href=\"https://www.investing.com/news/stock-market-news/booking-holdings-strategic-growth-targets-2026-34567\">View Article</a></p></body></html>",
+  "expected_verdicts": {
+    "citation_integrity": "PASS",
+    "data_integrity": "PASS",
+    "structural_compliance": "PASS",
+    "content_quality": "PASS"
+  },
+  "expected_score": 100,
+  "injected_failures": [],
+  "arbiter_verdicts": null,
+  "notes": "Populate 'arbiter_verdicts' after running the Arbiter against 'report_snippet' to activate calibration metrics."
+}

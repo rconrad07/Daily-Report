@@ -1,0 +1,16 @@
+{
+  "id": "fixture_003",
+  "description": "Report with 'N/A' in the Change (%) column. Data Integrity judge must return FAIL.",
+  "category": "bad",
+  "injected_failures": ["non_numeric_stock_change"],
+  "report_snippet": "<html><body><h2>Executive Summary</h2><p>Markets rebounded on March 10.</p><h2>Stock Performance</h2><table><tr><th>Ticker</th><th>Change (%)</th></tr><tr><td>SPY</td><td>+0.40%</td></tr><!-- INJECTED_FAILURE: non_numeric_stock_change --><tr><td>BITU</td><td>N/A</td></tr></table><h2>AI Tooling &amp; Experts</h2><p>Sam Altman discussed AGI. <a href=\"https://www.mlq.ai/sam-altman-government-ai-development/\">View Article</a></p><h2>Hospitality Tech</h2><p>Booking targets growth. <a href=\"https://www.investing.com/news/stock-market-news/booking-holdings-strategic-growth-targets-2026-34567\">View Article</a></p></body></html>",
+  "expected_verdicts": {
+    "citation_integrity": "PASS",
+    "data_integrity": "FAIL",
+    "structural_compliance": "PASS",
+    "content_quality": "PASS"
+  },
+  "expected_score": 75,
+  "arbiter_verdicts": null,
+  "notes": "BITU row has 'N/A' instead of a numeric percentage. Data Integrity must catch this."
+}

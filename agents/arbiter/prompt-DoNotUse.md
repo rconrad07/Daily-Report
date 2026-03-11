@@ -85,3 +85,5 @@ Structure your output as:
 - **Section Order Audit**: List the `<h2>` elements in DOM order and state whether they match.
 - **Actionable Recommendations**: What the pipeline should fix before the next run.
 - **Research Quality Table**: | Artifact | Pass/Fail | Notes |
+ach item maps to a specific Judge failure.]
+```

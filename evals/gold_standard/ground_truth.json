@@ -1,0 +1,71 @@
+{
+  "gold_standard_version": "1.0",
+  "description": "Master index of all calibration fixtures for the Arbiter validation script.",
+  "fixtures": [
+    {
+      "id": "fixture_001",
+      "file": "evals/gold_standard/good/all_judges_pass.json",
+      "category": "good",
+      "description": "A well-formed report where all four judges should PASS.",
+      "expected_verdicts": {
+        "citation_integrity": "PASS",
+        "data_integrity": "PASS",
+        "structural_compliance": "PASS",
+        "content_quality": "PASS"
+      },
+      "expected_score": 100
+    },
+    {
+      "id": "fixture_002",
+      "file": "evals/gold_standard/bad/homepage_link.json",
+      "category": "bad",
+      "description": "Report with one homepage link injected. Citation Integrity judge must FAIL.",
+      "expected_verdicts": {
+        "citation_integrity": "FAIL",
+        "data_integrity": "PASS",
+        "structural_compliance": "PASS",
+        "content_quality": "PASS"
+      },
+      "expected_score": 70
+    },
+    {
+      "id": "fixture_003",
+      "file": "evals/gold_standard/bad/non_numeric_stock.json",
+      "category": "bad",
+      "description": "Report with 'N/A' in the Change (%) column. Data Integrity judge must FAIL.",
+      "expected_verdicts": {
+        "citation_integrity": "PASS",
+        "data_integrity": "FAIL",
+        "structural_compliance": "PASS",
+        "content_quality": "PASS"
+      },
+      "expected_score": 75
+    },
+    {
+      "id": "fixture_004",
+      "file": "evals/gold_standard/bad/wrong_section_order.json",
+      "category": "bad",
+      "description": "Report with Hospitality Tech appearing before AI Tooling. Structural Compliance must FAIL.",
+      "expected_verdicts": {
+        "citation_integrity": "PASS",
+        "data_integrity": "PASS",
+        "structural_compliance": "FAIL",
+        "content_quality": "PASS"
+      },
+      "expected_score": 75
+    },
+    {
+      "id": "fixture_005",
+      "file": "evals/gold_standard/bad/multiple_failures.json",
+      "category": "bad",
+      "description": "Report with homepage link, non-numeric stock, and orphan footnote. Three judges must FAIL.",
+      "expected_verdicts": {
+        "citation_integrity": "FAIL",
+        "data_integrity": "FAIL",
+        "structural_compliance": "PASS",
+        "content_quality": "FAIL"
+      },
+      "expected_score": 25
+    }
+  ]
+}

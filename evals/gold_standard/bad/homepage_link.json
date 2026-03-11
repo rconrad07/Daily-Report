@@ -1,0 +1,16 @@
+{
+  "id": "fixture_002",
+  "description": "Report with one homepage link injected. Citation Integrity judge must return FAIL.",
+  "category": "bad",
+  "injected_failures": ["homepage_link"],
+  "report_snippet": "<html><body><h2>Executive Summary</h2><p>Markets rebounded on March 10.</p><h2>Stock Performance</h2><table><tr><th>Ticker</th><th>Change (%)</th></tr><tr><td>SPY</td><td>+0.40%</td></tr></table><h2>AI Tooling &amp; Experts</h2><p>Expedia announced travel trends. <!-- INJECTED_FAILURE: homepage_link --><a href=\"https://www.expediagroup.com/\">View Article</a></p><h2>Hospitality Tech</h2><p>Booking targets growth. <a href=\"https://www.investing.com/news/stock-market-news/booking-holdings-strategic-growth-targets-2026-34567\">View Article</a></p></body></html>",
+  "expected_verdicts": {
+    "citation_integrity": "FAIL",
+    "data_integrity": "PASS",
+    "structural_compliance": "PASS",
+    "content_quality": "PASS"
+  },
+  "expected_score": 70,
+  "arbiter_verdicts": null,
+  "notes": "The Expedia link points to the homepage (no article path). Citation Integrity must catch this."
+}
