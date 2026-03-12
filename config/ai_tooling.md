@@ -4,12 +4,13 @@ This file defines the experts, sources, and topics for the AI Tooling domain in 
 
 ## Experts to Follow
 
+- Andrej Karpathy*
+- Lenny Rachitsky*
+- Tal Raviv*
+- Aman Khan*
 - Marty Cagan
 - Roger Martin
 - Tony Ulwick
-- Lenny Rachitsky*
-- Tal Raviv*
-- Aman Khan
 - Richard Rumelt
 - Angie Jones
 - Nathaniel Whittemore
@@ -19,6 +20,7 @@ This file defines the experts, sources, and topics for the AI Tooling domain in 
 - Aparna Chennapragada
 - Kevin Weil
 - Sam Altman
+
 
 Add additional weighting (appear more frequently in reports (e.g. at least 3-4 times per week if new content exists)) to the experts marked with *
 
