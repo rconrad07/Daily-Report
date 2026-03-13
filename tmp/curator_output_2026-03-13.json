@@ -1,0 +1,63 @@
+{
+  "date": "2026-03-13",
+  "market_baseline": "Defensive — SPY +0.46% overnight as CPI meets expectations, but VIX remains elevated (25.01) and $100 Brent crude oil surge threatens to derail March 18 Fed rate cut hopes.",
+  "ai_word_of_the_day": {
+    "term": "Mixture of Experts (MoE)",
+    "definition": "An AI architecture that divides tasks among multiple specialized sub-networks ('experts'), using a 'gating network' to activate only the most relevant experts for a given input, significantly improving efficiency at scale."
+  },
+  "items": [
+    {
+      "source_title": "Bitcoin Surges to $71K Following Trump Middle East Remarks",
+      "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFpmrRgt1NbuUCIzJA5HYJxZMd2P74bq_VCUj2NOY0vab-oUmlMs-D7iJ7mqHc_ZEvPpvfvpVMpcpYVgYtpGvenelG7ZMTrEovJVaWXTmn2ulT9wsouDtzcGqk_aL4DMKSsWzuRaA1nZzM8Bm_JlfqgmLZVjvOEiw0G-Sv2PWQSH1ErKHLE_C_0Ay-ZpX5n7fGhwFkgKUsxZpgvBaRJ5HbCwit0",
+      "content": "Bitcoin surged to $71,100 on March 13 following social media dissemination of comments from Donald Trump regarding the Middle East conflict. The asset remains volatile as geopolitical tensions drive 'digital gold' demand. Impact: High volatility for crypto-adjacent tickers like BITU.",
+      "domain": "Stock Market",
+      "impact": "High",
+      "ticker": "BITU"
+    },
+    {
+      "source_title": "IEA Announces Record 400M Barrel Oil Release to Combat Surging Energy Costs",
+      "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHqSd_4HarY0_bLBOF8l1U6PCvQIDuhyGO-QWF-G2W43o1YI_u6wXgzx9AfcGWDPEtXo2PPnnhfLA-w8-2BdxtbfpYol4fXORFUA35e0Y4EiceoHMdLMUcTJZhz2VAxtTCwCYTTg0aKhC9dNj8uxQTCW7xnaL6ZC3VMosrxaxhwFCw3Zl206x6okVBZ7vA3iemE",
+      "content": "The International Energy Agency (IEA) approved a record 400 million-barrel emergency release of oil reserves on March 11-13 as Brent crude approaches $100. Markets expect the Trump administration to suspend the Jones Act to further lower transportation costs. Impact: Inflationary pressure persists despite liquidity injection.",
+      "domain": "Stock Market",
+      "impact": "High",
+      "ticker": "SPY"
+    },
+    {
+      "source_title": "OpenAI to Integrate Sora Video Generation into ChatGPT, Launches Codex-Spark",
+      "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE1xqjfS37TwQVp5AsOvoR9nfNsare49vgACGZX_dUDTohsvLbEXsG7U1Cu8bHtoJjGMRrISBAN-fMkT6jpIulNiUJWepzVCc0uaUGi3Qle-58krZqBC_9VUugxc636Fo54WNMX",
+      "content": "OpenAI plans to natively bake Sora video generation into ChatGPT. Simultaneously, the release of GPT-5.3-Codex-Spark, a lightweight variant for coding, signals a strategic move to reduce reliance on NVIDIA for inference workloads.",
+      "domain": "AI Tooling",
+      "impact": "High",
+      "expert": "OpenAI"
+    },
+    {
+      "source_title": "NVIDIA Commits $26B to Transform into Full-Stack AI Laboratory",
+      "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFVo0i0f-HK-lCMTWEt4469cn-LUsn3V9OC4Ulmfuxe6u1ByHxk3sEx7Xjbeu4C-5djgKHvzBApRv_lX0OmoQ_7PAc2dP0-VSYCT5HzIXFUz9Ay98AKrwVy2Hy9chO_4bNtc4FBwkG1yO-xKXE-F3ojj6dlCyYkjeGYzVzjcuTUuALZoNGriR3dXZT04P4Ob6jAKhORRD3n",
+      "content": "NVIDIA is pivoting from a chipmaker to a 'full-stack AI laboratory,' committing $26B over five years for open-weighted models and the NemoClaw platform. Adoption of agentic AI has hit 50% in telecom/retail sectors as of March 2026.",
+      "domain": "AI Tooling",
+      "impact": "High",
+      "ticker": "MSFT"
+    },
+    {
+      "source_title": "Spain Fines Booking.com Record €413M for Anti-Competitive Abuse",
+      "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE1Uo2xVllrAQvhPFAB_690DKNxmejW8VHM5pMWsWAzf9Q_HqHDWlmmcCD0zb8I0ZohiQg25orYuQsvqSPH0lsOxLkfsob7wbNsmwYVf2437NnW2rvy6WT11G-9h1XUmHk4669gYyrAfjKuwnSYADPwtNfwlpIEoglWfbt8cXs2a026s7t1r78",
+      "content": "Spain's CNMC watchdog imposed a landmark €413 million fine on Booking.com on March 12 for abusing its dominant market position. The ruling alleges the platform's clauses suppressed competition from other OTAs and harmed hotel pricing independence.",
+      "domain": "Hospitality Tech",
+      "impact": "High"
+    },
+    {
+      "source_title": "Marriott AI Platform Boosts Revenue 50%; Named FIFA World Cup Support",
+      "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQErCO3ezXzQ78WUV1wK8_LWj2zN7GY4wSEV13RhTJV6KuR-NZKBBXbqFFwgp7xbQ_G30v8BC7LMIg1U1VCtr1jc1c2ueIUBUcrqespkHydKkj8rxrkiRv5j7lufNihZeGz9-u5AhA7h6lUsPATGkUbMagNmsjO_P9bobEjiwTz10JJ4fqG7gKfF0Hmc",
+      "content": "Marriott's AI-powered 'Personalized Experience Platform' has successfully driven a 50% increase in ancillary revenue. The company also announced a partnership as an Official Hotel Supporter for the FIFA World Cup 2026, targeting massive sports tourism demand.",
+      "domain": "Hospitality Tech",
+      "impact": "Medium"
+    },
+    {
+      "source_title": "UK CMA Investigates Hilton and Marriott for Alleged Data-Sharing Collusion",
+      "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDMpbwHvbzdKgeU0OFSYIpWJjNm7zf_Otp44LuFEZ5X1HnxUukHWjRj02UwkmgkW-gvEh13Qjk7BZiS-mnpRu9Zy3_DYIya15dKsm11v-nOpSykrls2RvssL6FF1l5riQZWZSYtCCjGEIH7VKkcCsKdIWGs6NZqApX74XwofVJMt1e8x9cvuMO4w",
+      "content": "The UK Competition and Markets Authority (CMA) has opened an investigation into Hilton, Marriott, and IHG for suspected anticompetitive data-sharing practices. The probe focuses on whether the firms exchanged sensitive pricing and occupancy data.",
+      "domain": "Hospitality Tech",
+      "impact": "Medium"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "date": "2026-03-13",
+  "market_baseline": "Defensive — SPY +0.46% overnight as CPI meets expectations, but VIX remains elevated (25.01) and $100 Brent crude oil surge threatens to derail March 18 Fed rate cut hopes.",
+  "ai_word_of_the_day": {
+    "term": "Mixture of Experts (MoE)",
+    "definition": "An AI architecture that divides tasks among multiple specialized sub-networks ('experts'), using a 'gating network' to activate only the most relevant experts for a given input, significantly improving efficiency at scale."
+  },
+  "summaries": [
+    {
+      "title": "Bitcoin Surges to $71K on Geopolitical and Political Volatility",
+      "summary": "Bitcoin surrogate Bitcoin ETF (BITU) saw increased activity as BTC surged to $71,100 on March 13 following social media remarks from Donald Trump regarding the Middle East conflict. Geopolitical tension continues to drive adoption of 'digital gold' as a safe haven, though volatility remains high. PM Insight: Crypto integration in fintech remains high-risk/high-reward as political signals now drive immediate asset swings.",
+      "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFpmrRgt1NbuUCIzJA5HYJxZMd2P74bq_VCUj2NOY0vab-oUmlMs-D7iJ7mqHc_ZEvPpvfvpVMpcpYVgYtpGvenelG7ZMTrEovJVaWXTmn2ulT9wsouDtzcGqk_aL4DMKSsWzuRaA1nZzM8Bm_JlfqgmLZVjvOEiw0G-Sv2PWQSH1ErKHLE_C_0Ay-ZpX5n7fGhwFkgKUsxZpgvBaRJ5HbCwit0",
+      "domain": "Stock Market",
+      "ticker": "BITU",
+      "change_pct": "Premarket $71,100 (surged ~$2,000)",
+      "timeframe": "March 13, 8:45 AM ET"
+    },
+    {
+      "title": "IEA 400M Barrel Release Targets $100 Oil Peak; Inflation Fears Persist",
+      "summary": "The IEA approved a record 400M barrel oil release (March 11-13) to counter Brent crude's approach to the $100 threshold. The Trump administration is concurrently reviewing a Jones Act suspension to lower shipping costs. Despite these measures, 2.4% CPI data and surging energy prices have led markets to price out a March 18 Fed rate cut. PM Insight: Supply chain costs are trending upward; PMs must factor sustained energy-driven inflation into 2026 margin projections.",
+      "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHqSd_4HarY0_bLBOF8l1U6PCvQIDuhyGO-QWF-G2W43o1YI_u6wXgzx9AfcGWDPEtXo2PPnnhfLA-w8-2BdxtbfpYol4fXORFUA35e0Y4EiceoHMdLMUcTJZhz2VAxtTCwCYTTg0aKhC9dNj8uxQTCW7xnaL6ZC3VMosrxaxhwFCw3Zl206x6okVBZ7vA3iemE",
+      "domain": "Stock Market",
+      "ticker": "SPY",
+      "change_pct": "+0.46% (overnight)",
+      "timeframe": "March 13, 8:45 AM ET"
+    },
+    {
+      "title": "OpenAI Natively Integrates Sora Video; Launches Lightweight Codex-Spark",
+      "summary": "OpenAI is integrating Sora video generation directly into ChatGPT, while releasing GPT-5.3-Codex-Spark—a compact coding model. This move targets the commoditization of video creation and signals a strategic shift to reduce dependency on NVIDIA inference hardware by optimizing for smaller compute footprints. PM Insight: Multi-modal content creation is moving from standalone tools to 'built-in' SaaS features, raising the bar for AI productivity suites.",
+      "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE1xqjfS37TwQVp5AsOvoR9nfNsare49vgACGZX_dUDTohsvLbEXsG7U1Cu8bHtoJjGMRrISBAN-fMkT6jpIulNiUJWepzVCc0uaUGi3Qle-58krZqBC_9VUugxc636Fo54WNMX",
+      "domain": "AI Tooling"
+    },
+    {
+      "title": "NVIDIA's $26B Laboratory Shift; NemoClaw Agentic Platform Debuts",
+      "summary": "NVIDIA is pivoting to a 'full-stack AI laboratory' with a $26B investment focused on open-weighted models and the NemoClaw agent platform. Recent data shows agentic AI adoption has reached 50% in the telecom and retail sectors. PM Insight: As hardware vendors verticalize into software and models, PMs should evaluate 'hardware-agonistic' agent frameworks like NemoClaw to avoid ecosystem lock-in while leveraging massive compute scale.",
+      "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFVo0i0f-HK-lCMTWEt4469cn-LUsn3V9OC4Ulmfuxe6u1ByHxk3sEx7Xjbeu4C-5djgKHvzBApRv_lX0OmoQ_7PAc2dP0-VSYCT5HzIXFUz9Ay98AKrwVy2Hy9chO_4bNtc4FBwkG1yO-xKXE-F3ojj6dlCyYkjeGYzVzjcuTUuALZoNGriR3dXZT04P4Ob6jAKhORRD3n",
+      "domain": "AI Tooling"
+    },
+    {
+      "title": "Booking.com Faces Record €413M Fine for Dominant Market Abuse",
+      "summary": "Spain's CNMC watchdog fined Booking.com €413 million (March 12) for long-standing anti-competitive behavior. The platform allegedly imposed parity and pricing clauses that restricted hotel independence and suppressed rival OTAs. PM Insight: Platform governance is under intense regulatory scrutiny; OTAs must pivot from 'exclusionary' practices to 'value-add' partner models to avoid similar catastrophic legal penalties in the EU.",
+      "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE1Uo2xVllrAQvhPFAB_690DKNxmejW8VHM5pMWsWAzf9Q_HqHDWlmmcCD0zb8I0ZohiQg25orYuQsvqSPH0lsOxLkfsob7wbNsmwYVf2437NnW2rvy6WT11G-9h1XUmHk4669gYyrAfjKuwnSYADPwtNfwlpIEoglWfbt8cXs2a026s7t1r78",
+      "domain": "Hospitality Tech"
+    },
+    {
+      "title": "Marriott AI Platform Drives 50% RevPAR Lift; Named FIFA World Cup Support",
+      "summary": "Marriott's 'Personalized Experience Platform' has leveraged AI to drive a 50% lift in ancillary revenue and a 25% satisfaction gain. The company has also secured an 'Official Hotel Supporter' status for the FIFA World Cup 2026, positioning it as the primary beneficiary of the projected sports tourism surge. PM Insight: High-intent AI recommendations are no longer optional—they are core revenue drivers. PMs should integrate 'event-aware' signals (like FIFA) into standard pricing and CX logic.",
+      "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQErCO3ezXzQ78WUV1wK8_LWj2zN7GY4wSEV13RhTJV6KuR-NZKBBXbqFFwgp7xbQ_G30v8BC7LMIg1U1VCtr1jc1c2ueIUBUcrqespkHydKkj8rxrkiRv5j7lufNihZeGz9-u5AhA7h6lUsPATGkUbMagNmsjO_P9bobEjiwTz10JJ4fqG7gKfF0Hmc",
+      "domain": "Hospitality Tech"
+    },
+    {
+      "title": "UK CMA Probe Targets Hilton/Marriott Over Alleged Data-Sharing Collusion",
+      "summary": "The UK CMA is investigating Hilton, Marriott, and IHG for suspected anti-competitive data-sharing on pricing and occupancy. The probe raises concerns about whether automated yield management systems are crossing into algorithmic collusion. PM Insight: Revenue management teams must ensure 'algorithmic transparency' to prevent regulators from classifying dynamic pricing as price-fixing.",
+      "source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDMpbwHvbzdKgeU0OFSYIpWJjNm7zf_Otp44LuFEZ5X1HnxUukHWjRj02UwkmgkW-gvEh13Qjk7BZiS-mnpRu9Zy3_DYIya15dKsm11v-nOpSykrls2RvssL6FF1l5riQZWZSYtCCjGEIH7VKkcCsKdIWGs6NZqApX74XwofVJMt1e8x9cvuMO4w",
+      "domain": "Hospitality Tech"
+    }
+  ]
+}
